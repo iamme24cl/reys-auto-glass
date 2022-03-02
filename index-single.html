@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+	<title>ClearView</title>
+	<meta charset="utf-8">
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]-->
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/animations.css">
+	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="css/main.css" class="color-switcher-link">
+	<link rel="stylesheet" href="css/shop.css" class="color-switcher-link">
+	<script src="js/vendor/modernizr-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+	<!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]-->
+	<div class="preloader">
+		<div class="preloader_image"></div>
+	</div>
+	<!-- search modal -->
+	<div class="modal" tabindex="-1" role="dialog" aria-labelledby="search_modal" id="search_modal"> <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+		<span aria-hidden="true">
+			<i class="rt-icon2-cross2"></i>
+		</span>
+	</button>
+		<div class="widget widget_search">
+			<form method="get" class="searchform search-form form-inline" action="./">
+				<div class="form-group bottommargin_0"> <input type="text" value="" name="search" class="form-control" placeholder="Search keyword" id="modal-search-input"> </div> <button type="submit" class="theme_button no_bg_button">Search</button> </form>
+		</div>
+	</div>
+	<!-- Unyson messages modal -->
+	<div class="modal fade" tabindex="-1" role="dialog" id="messages_modal">
+		<div class="fw-messages-wrap ls with_padding">
+			<!-- Uncomment this UL with LI to show messages in modal popup to your user: -->
+			<!--
+		<ul class="list-unstyled">
+			<li>Message To User</li>
+		</ul>
+		-->
+		</div>
+	</div>
+	<!-- eof .modal -->
+	<!-- wrappers for visual page editor and boxed version of template -->
+	<div id="canvas">
+		<div id="box_wrapper">
+			<!-- template sections -->
+			<section class="page_topline ls table_section table_section_md section_padding_top_10 section_padding_bottom_10">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-md-6 col-md-push-3 col-sm-12 text-center">
+							<div class="inline-content"> <span>
+						<i class="fa fa-map-marker highlight rightpadding_5" aria-hidden="true"></i>
+						58/3 Kass Drives, Miami
+					</span> <span class="greylinks">
+						<i class="fa fa-pencil highlight rightpadding_5" aria-hidden="true"></i>
+						<a href="mailto:clearview@example.com">clearview@example.com</a>
+					</span> <span>
+						<i class="fa fa-clock-o highlight rightpadding_5" aria-hidden="true"></i>
+						Working Hours: 24/7
+					</span> </div>
+						</div>
+						<div class="col-md-3 col-md-pull-6 col-sm-6 text-center text-md-left"> <a class="social-icon socicon-facebook" href="#" title="Facebook"></a> <a class="social-icon socicon-twitter" href="#" title="Twitter"></a> <a class="social-icon socicon-google" href="#" title="Twitter"></a> <a class="social-icon socicon-linkedin"
+							    href="#" title="Twitter"></a> <a class="social-icon socicon-youtube" href="#" title="Youtube"></a> </div>
+						<div class="col-md-3 col-sm-6 text-center text-md-right">
+							<div class="widget widget_search">
+								<form method="get" class="searchform inline-form" action="./">
+									<div class="form-group-wrap">
+										<div class="form-group"> <label class="sr-only" for="topline-widget-search">Search for:</label> <input id="topline-widget-search" type="text" value="" name="search" class="form-control" placeholder="Search Keyword"> </div> <button type="submit" class="theme_button">ok</button>										</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<header class="page_header header_darkgrey header_transparent tall_header toggler_xs_right columns_margin_0">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 display_table">
+							<div class="header_left_logo display_table_cell"> <a href="./" class="logo top_logo">
+                        <img src="images/logo.png" alt="">
+                    </a> </div>
+							<div class="header_mainmenu display_table_cell text-center">
+								<!-- main nav start -->
+								<nav class="mainmenu_wrapper">
+									<ul class="mainmenu nav sf-menu">
+										<li class="active"> <a href="#canvas">Home</a>
+											<ul>
+												<li> <a href="index.html">Home</a> </li>
+												<li> <a href="index-static.html">Home static intro</a> </li>
+												<li> <a href="index-single.html">Home single page</a> </li>
+											</ul>
+										</li>
+										<li> <a href="#about">About</a> </li>
+										<li> <a href="#services">Services</a> </li>
+										<li> <a href="#team">Team</a> </li>
+										<li> <a href="#quote">Get Quote</a> </li>
+										<li> <a href="#testimonials">Testimonials</a> </li>
+										<li> <a href="#callback">Call Back</a> </li>
+										<li> <a href="#blog">News</a> </li>
+									</ul>
+								</nav>
+								<!-- eof main nav -->
+								<!-- header toggler --><span class="toggle_menu"><span></span></span>
+							</div>
+							<div class="header_right_buttons display_table_cell text-right hidden-xs">
+								<h5 class="thin text-uppercase margin_0">Call us quickly</h5> <span class="big regular">(800) 846 4235</span> </div>
+						</div>
+					</div>
+				</div>
+			</header>
+			<section class="intro_section page_mainslider ds">
+				<div class="flexslider" data-dots="true" data-nav="false">
+					<ul class="slides">
+						<li> <img src="images/slide01.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="bold text-uppercase highlight"> welcome to the clearview </p>
+													<h2>We Provide 24/7 Mobile Service</h2>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p>We Offer FREE mobile repair service, for all customers within a 25 mile range of our location.</p>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<div class="slide_buttons"> <a href="contact.html" class="theme_button color1">Free Estimate</a> <a href="services.html" class="theme_button inverse complex_button">
+												<span class="left-icon">
+													<img src="images/bbb.png" alt="">
+												</span>
+												Accredited<br> bussiness
+												<span class="right-icon">A+</span>
+											</a> </div>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+						<li> <img src="images/slide02.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="bold text-uppercase highlight"> welcome to the clearview </p>
+													<h2>We Provide 24/7 Mobile Service</h2>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p>We Offer FREE mobile repair service, for all customers within a 25 mile range of our location.</p>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<div class="slide_buttons"> <a href="contact.html" class="theme_button color1">Free Estimate</a> <a href="services.html" class="theme_button inverse complex_button">
+												<span class="left-icon">
+													<img src="images/bbb.png" alt="">
+												</span>
+												Accredited<br> bussiness
+												<span class="right-icon">A+</span>
+											</a> </div>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+						<li> <img src="images/slide03.jpg" alt="">
+							<div class="container">
+								<div class="row">
+									<div class="col-sm-12">
+										<div class="slide_description_wrapper">
+											<div class="slide_description">
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p class="bold text-uppercase highlight"> welcome to the clearview </p>
+													<h2>We Provide 24/7 Mobile Service</h2>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<p>We Offer FREE mobile repair service, for all customers within a 25 mile range of our location.</p>
+												</div>
+												<div class="intro-layer" data-animation="fadeInUp">
+													<div class="slide_buttons"> <a href="contact.html" class="theme_button color1">Free Estimate</a> <a href="services.html" class="theme_button inverse complex_button">
+												<span class="left-icon">
+													<img src="images/bbb.png" alt="">
+												</span>
+												Accredited<br> bussiness
+												<span class="right-icon">A+</span>
+											</a> </div>
+												</div>
+											</div>
+											<!-- eof .slide_description -->
+										</div>
+										<!-- eof .slide_description_wrapper -->
+									</div>
+									<!-- eof .col-* -->
+								</div>
+								<!-- eof .row -->
+							</div>
+							<!-- eof .container -->
+						</li>
+					</ul>
+				</div>
+				<!-- eof flexslider -->
+			</section>
+			<section id="about" class="ls section_padding_top_100 section_padding_bottom_75 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6 col-md-push-6">
+							<div class="embed-responsive embed-responsive-3by2"> <a href="https://player.vimeo.com/video/1084537" class="embed-placeholder">
+						<img src="images/gallery/13.jpg" alt="">
+					</a> </div>
+						</div>
+						<div class="col-md-6 col-md-pull-6"> <span class="small-text big highlight">
+					Who is clearview?
+				</span>
+							<h2 class="section_header"> About Our Company </h2>
+							<hr class="divider_60_2 main_bg_color">
+							<p class="bold grey"> A specialized team of experienced technicians thriving to help clients in their needs. </p>
+							<p>Since 2001, ClearView has specialized in repairing and replacing auto glass, windshields, automotive tinting, mobile services and more!</p>
+							<p>Our full line of services is backed by decades of delivering quality workmanship and value to our customers. At ClearView, we pride ourselves on providing superior products and services for every one of our customers. It's what makes us the clear
+								choice for all your glass needs. </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="services" class="ds section_padding_top_100 section_padding_bottom_100 section_padding_bottom_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6"> <span class="small-text big highlight">
+					Our Services
+				</span>
+							<h2 class="section_header"> Our Service Plans To Meet All Your Demands </h2>
+							<hr class="divider_60_2 main_bg_color"> </div>
+						<div class="col-md-6">
+							<p class="topmargin_30">ClearView is incredibly flexible, friendly and easy to work with. Our list of services are widely acknowledged to assure you get the best quality service; Anytime. Anywhere! Pork loin capicola beef, pork tail strip steak pig ribeye cupim ball tip
+								burgdoggen prosciutto biltong.</p>
+						</div>
+					</div>
+					<div class="row with_top_border toppadding_50 topmargin_30">
+						<div class="col-md-3 col-sm-6">
+							<div class="media">
+								<div class="media-left media-middle">
+									<div class="teaser_icon size_small border_icon image_icon round highlight"> <img src="images/service-icon/hood.png" alt=""> </div>
+								</div>
+								<div class="media-body media-middle">
+									<h5 class="text-uppercase semibold"> <a href="service-single.html"><small>Windshield</small> remplacements</a> </h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="media">
+								<div class="media-left media-middle">
+									<div class="teaser_icon size_small border_icon image_icon round highlight"> <img src="images/service-icon/rear-window.png" alt=""> </div>
+								</div>
+								<div class="media-body media-middle">
+									<h5 class="text-uppercase semibold"> <a href="service-single.html"><small>Rear window</small> remplacements</a> </h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="media">
+								<div class="media-left media-middle">
+									<div class="teaser_icon size_small border_icon image_icon round highlight"> <img src="images/service-icon/door.png" alt=""> </div>
+								</div>
+								<div class="media-body media-middle">
+									<h5 class="text-uppercase semibold"> <a href="service-single.html"><small>Side window</small> remplacements</a> </h5>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="media">
+								<div class="media-left media-middle">
+									<div class="teaser_icon size_small border_icon image_icon round highlight"> <img src="images/service-icon/car.png" alt=""> </div>
+								</div>
+								<div class="media-body media-middle">
+									<h5 class="text-uppercase semibold"> <a href="service-single.html"><small>Tinting all</small> the windows</a> </h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="team" class="ls section_padding_top_100 section_padding_bottom_50 columns_padding_25 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row flex-row2">
+						<div class="col-sm-4 col-lg-3"> <span class="small-text big highlight">
+					Our Staff
+				</span>
+							<h2 class="section_header"> The Team Of Our Best Workers </h2>
+							<hr class="divider_60_2 main_bg_color"> </div>
+						<div class="col-sm-8 col-lg-9">
+							<div class="owl-carousel" data-responsive-lg="3" data-nav="true" data-dots="false">
+								<div class="vertical-item content-padding rounded overflow_hidden with_background">
+									<div class="item-media"> <img src="images/team/01.jpg" alt="">
+										<div class="media-links ds">
+											<div class="bottom-links"> <a href="team-single.html" class="theme_button inverse">View profile</a> </div>
+										</div>
+									</div>
+									<div class="item-content bottom_color_border">
+										<h4 class="entry-title bottommargin_0"> <a href="team-single.html">Leanard Meyer</a> </h4>
+										<p class="small-text highlight">Director</p>
+									</div>
+								</div>
+								<div class="vertical-item content-padding rounded overflow_hidden with_background">
+									<div class="item-media"> <img src="images/team/02.jpg" alt="">
+										<div class="media-links ds">
+											<div class="bottom-links"> <a href="team-single.html" class="theme_button inverse">View profile</a> </div>
+										</div>
+									</div>
+									<div class="item-content bottom_color_border">
+										<h4 class="entry-title bottommargin_0"> <a href="team-single.html">Adelai Morgan</a> </h4>
+										<p class="small-text highlight">manager</p>
+									</div>
+								</div>
+								<div class="vertical-item content-padding rounded overflow_hidden with_background">
+									<div class="item-media"> <img src="images/team/03.jpg" alt="">
+										<div class="media-links ds">
+											<div class="bottom-links"> <a href="team-single.html" class="theme_button inverse">View profile</a> </div>
+										</div>
+									</div>
+									<div class="item-content bottom_color_border">
+										<h4 class="entry-title bottommargin_0"> <a href="team-single.html">Francisco Brady</a> </h4>
+										<p class="small-text highlight">master</p>
+									</div>
+								</div>
+								<div class="vertical-item content-padding rounded overflow_hidden with_background">
+									<div class="item-media"> <img src="images/team/04.jpg" alt="">
+										<div class="media-links ds">
+											<div class="bottom-links"> <a href="team-single.html" class="theme_button inverse">View profile</a> </div>
+										</div>
+									</div>
+									<div class="item-content bottom_color_border">
+										<h4 class="entry-title bottommargin_0"> <a href="team-single.html">Jessie Garza</a> </h4>
+										<p class="small-text highlight">assistant</p>
+									</div>
+								</div>
+								<div class="vertical-item content-padding rounded overflow_hidden with_background">
+									<div class="item-media"> <img src="images/team/05.jpg" alt="">
+										<div class="media-links ds">
+											<div class="bottom-links"> <a href="team-single.html" class="theme_button inverse">View profile</a> </div>
+										</div>
+									</div>
+									<div class="item-content bottom_color_border">
+										<h4 class="entry-title bottommargin_0"> <a href="team-single.html">Lucas Bailey</a> </h4>
+										<p class="small-text highlight">manager</p>
+									</div>
+								</div>
+								<div class="vertical-item content-padding rounded overflow_hidden with_background">
+									<div class="item-media"> <img src="images/team/06.jpg" alt="">
+										<div class="media-links ds">
+											<div class="bottom-links"> <a href="team-single.html" class="theme_button inverse">View profile</a> </div>
+										</div>
+									</div>
+									<div class="item-content bottom_color_border">
+										<h4 class="entry-title bottommargin_0"> <a href="team-single.html">Luella Barker</a> </h4>
+										<p class="small-text highlight">manager</p>
+									</div>
+								</div>
+								<div class="vertical-item content-padding rounded overflow_hidden with_background">
+									<div class="item-media"> <img src="images/team/07.jpg" alt="">
+										<div class="media-links ds">
+											<div class="bottom-links"> <a href="team-single.html" class="theme_button inverse">View profile</a> </div>
+										</div>
+									</div>
+									<div class="item-content bottom_color_border">
+										<h4 class="entry-title bottommargin_0"> <a href="team-single.html">Teresa Collins</a> </h4>
+										<p class="small-text highlight">master</p>
+									</div>
+								</div>
+								<div class="vertical-item content-padding rounded overflow_hidden with_background">
+									<div class="item-media"> <img src="images/team/08.jpg" alt="">
+										<div class="media-links ds">
+											<div class="bottom-links"> <a href="team-single.html" class="theme_button inverse">View profile</a> </div>
+										</div>
+									</div>
+									<div class="item-content bottom_color_border">
+										<h4 class="entry-title bottommargin_0"> <a href="team-single.html">Stephen Burns</a> </h4>
+										<p class="small-text highlight">assistant</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-12">
+							<p class="team_more_button"> <a href="team.html" class="theme_button color1">Read More</a> </p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="quote" class="ds parallax page_contact section_padding_top_100 section_padding_bottom_75">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12"> <span class="small-text big highlight">
+                    Contact us
+                </span>
+							<h2 class="section_header"> Get Quote Today </h2>
+							<hr class="divider_60_2 main_bg_color">
+							<form class="contact-form topmargin_50" method="post" action="./">
+								<div class="row columns_padding_10">
+									<div class="col-sm-12 col-md-3">
+										<p class="form-group"> <label for="name">Your Full Name <span class="required">*</span></label> <input type="text" aria-required="true" size="30" value="" name="name" id="name" class="form-control" placeholder="Your Full Name"> </p>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<p class="form-group"> <label for="phone">Your Phone Number <span class="required">*</span></label> <input type="number" aria-required="true" size="30" value="" name="phone" id="phone" class="form-control" placeholder="Your Phone Number"> </p>
+									</div>
+									<div class="col-sm-6 col-md-3">
+										<p class="form-group"> <label for="email">Your Email address</label> <input type="email" size="30" value="" name="email" id="email" class="form-control" placeholder="Your Email Address"> </p>
+									</div>
+									<div class="col-md-3 col-sm-12">
+										<p class="form-group"> <label for="service-time">Best time for service</label> <select name="service-time" id="service-time" class="wrap-select-group">
+                                    <option value="-1" data-default="" selected="" disabled="">Best time for service</option>
+                                    <option value="1">Morning</option>
+                                    <option value="2">Afternoon</option>
+                                    <option value="3">Evening</option>
+                                </select> </p>
+									</div>
+									<div class="col-sm-12">
+										<div class="form-group"> <label for="message">Your question</label> <textarea aria-required="true" rows="4" cols="45" name="message" id="message" class="form-control" placeholder="Your question"></textarea> </div>
+									</div>
+								</div>
+								<div class="row topmargin_10">
+									<div class="col-sm-12">
+										<p class="contact-form-submit topmargin_20"> <button type="submit" id="contact_form_submit" name="contact_submit" class="theme_button color1 min_width_button">Send now</button> <a href="contact.html" class="theme_button inverse">Our contacts</a> </p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="testimonials" class="ls section_padding_top_100 section_padding_bottom_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12"> <span class="small-text big highlight">
+					Testimonials
+				</span>
+							<h2 class="section_header"> What Our Clients Said </h2>
+							<hr class="divider_60_2 main_bg_color">
+							<div class="owl-carousel right-top-nav topmargin_60" data-responsive-lg="2" data-responsive-md="2" data-nav="true">
+								<blockquote class="media">
+									<div class="media-body media-middle with_padding with_background bottom_color_border bottom_rounded">«I replace my door glass &amp; windshield, great price and services. Willing to do mobile service.»</div>
+									<div class="media-right media-middle item-meta"> <img src="images/faces/01.jpg" alt="">
+										<h4 class="margin_0">Lelia Hart</h4> <span class="star-rating" title="Rated 4.0 out of 5">
+								<span style="width:80%">
+									<strong class="rating">4.0</strong> out of 5
+								</span> </span>
+									</div>
+								</blockquote>
+								<blockquote class="media">
+									<div class="media-body media-middle with_padding with_background bottom_color_border bottom_rounded">«Very friendly, excellent customer service, very professional extremely helpful, is knowledgeable.»</div>
+									<div class="media-right media-middle item-meta"> <img src="images/faces/02.jpg" alt="">
+										<h4 class="margin_0">Louis Ford</h4> <span class="star-rating" title="Rated 5.0 out of 5">
+								<span style="width:100%">
+									<strong class="rating">5.0</strong> out of 5
+								</span> </span>
+									</div>
+								</blockquote>
+								<blockquote class="media">
+									<div class="media-body media-middle with_padding with_background bottom_color_border bottom_rounded">«Filet mignon ham hock fatback shankle leberkas. Beef ribeye pork belly cow, jowl short ribs t-bone bacon.»</div>
+									<div class="media-right media-middle item-meta"> <img src="images/faces/03.jpg" alt="">
+										<h4 class="margin_0">Bobby Wolfe</h4> <span class="star-rating" title="Rated 4.0 out of 5">
+								<span style="width:80%">
+									<strong class="rating">4.0</strong> out of 5
+								</span> </span>
+									</div>
+								</blockquote>
+								<blockquote class="media">
+									<div class="media-body media-middle with_padding with_background bottom_color_border bottom_rounded">«Bresaola doner cupim short ribs, jerky frankfurter bacon salami fatback tail. Pig kevin doner cupim tenderloin.»</div>
+									<div class="media-right media-middle item-meta"> <img src="images/faces/04.jpg" alt="">
+										<h4 class="margin_0">Virgie Greer</h4> <span class="star-rating" title="Rated 5.0 out of 5">
+								<span style="width:100%">
+									<strong class="rating">5.0</strong> out of 5
+								</span> </span>
+									</div>
+								</blockquote>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="callback" class="ds parallax page_action section_padding_100">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-4 col-lg-3">
+							<div class="topmargin_30">
+								<h2 class="section_header">A Call Back</h2>
+							</div>
+						</div>
+						<div class="col-md-8 col-lg-9">
+							<form class="contact-form" method="post" action="./">
+								<div class="row columns_padding_10">
+									<div class="col-sm-4">
+										<p class="form-group"> <label for="callback-name">Your Full Name <span class="required">*</span></label> <input type="text" aria-required="true" size="30" value="" name="name" id="callback-name" class="form-control" placeholder="Your Full Name"> </p>
+									</div>
+									<div class="col-sm-4">
+										<p class="form-group"> <label for="callback-phone">Your Phone Number <span class="required">*</span></label> <input type="number" aria-required="true" size="30" value="" name="phone" id="callback-phone" class="form-control" placeholder="Your Phone Number"> </p>
+									</div>
+									<div class="col-sm-4">
+										<p class="contact-form-submit"> <button type="submit" id="callback_contact_form_submit" name="contact_submit" class="theme_button color1 block_button">Request now</button> </p>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="ls section_padding_top_100 section_padding_bottom_75 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6"> <span class="small-text big highlight">
+					Our anvantages
+				</span>
+							<h2 class="section_header"> What We Can Do For You </h2>
+							<hr class="divider_60_2 main_bg_color">
+							<p>We provide the most proficient auto glass installation and replacement services in the greater San Diego area. ClearView can help you with your car needs, whether it means replacing a windshield or repairing a chip.</p>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 col-xxs-12 text-center">
+							<div class="chart margin_0" data-size="140" data-percent="75" data-line="5" data-bgcolor="#d7d5d0" data-trackcolor="#fab915" data-speed="3200">
+								<div class="chart-meta"> <strong class="percent grey">75</strong> </div>
+							</div>
+							<h5>Replacement</h5>
+						</div>
+						<div class="col-md-2 col-sm-4 col-xs-6 col-xxs-12 text-center">
+							<div class="chart margin_0" data-size="140" data-percent="66" data-line="5" data-bgcolor="#d7d5d0" data-trackcolor="#fab915" data-speed="3200">
+								<div class="chart-meta"> <strong class="percent grey">66</strong> </div>
+							</div>
+							<h5>Glass Tinting</h5>
+						</div>
+						<div class="col-md-2 col-sm-4 text-center">
+							<div class="chart margin_0" data-size="140" data-percent="43" data-line="5" data-bgcolor="#d7d5d0" data-trackcolor="#fab915" data-speed="3200">
+								<div class="chart-meta"> <strong class="percent grey">43</strong> </div>
+							</div>
+							<h5>Chip Repair</h5>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="blog" class="ds section_padding_top_100 section_padding_bottom_75 columns_margin_bottom_30 columns_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-3"> <span class="small-text big highlight">
+					Our blog
+				</span>
+							<h2 class="section_header">Our Latest News</h2>
+							<hr class="divider_60_2 main_bg_color">
+							<div class="widget widget_categories">
+								<ul class="greylinks">
+									<li class=""> <a href="blog-right.html">Auto glass</a> </li>
+									<li class=""> <a href="blog-right.html">Glass tining</a> </li>
+									<li class=""> <a href="blog-right.html">Glass replacement</a> </li>
+									<li class=""> <a href="blog-right.html">Chip repair</a> </li>
+								</ul>
+							</div>
+						</div>
+						<div class="col-sm-9">
+							<div class="owl-carousel" data-nav="true" data-dots="false" data-responsive-lg="3" data-responsive-md="2" data-responsive-sm="2">
+								<article class="post vertical-item content-padding ls ms rounded overflow_hidden">
+									<div class="item-media entry-thumbnail top_color_border"> <img src="images/gallery/08.jpg" alt=""> </div>
+									<div class="item-content">
+										<header class="entry-header">
+											<div class="categories-links highlightlinks"> <a href="blog-right.html">Auto class</a> </div>
+											<h4 class="entry-title"> <a href="blog-single-right.html">Study 800 Number Still Popular</a> </h4>
+										</header>
+										<div class="entry-content">
+											<p>Pig tri-tip burgdoggen tongue spare ribs. Beef ribs alcatra cupim.</p>
+										</div>
+									</div>
+									<footer class="entry-meta small-text greylinks">
+										<div class="inline-content"> <span>
+									<i class="fa fa-calendar highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">
+										<time datetime="2017-10-03T08:50:40+00:00">
+										10.11.17</time>
+									</a>
+								</span> <span>
+									<i class="fa fa-user highlight rightpadding_5"></i>
+									<a href="blog-right.html">
+										Admin
+									</a>
+								</span> <span>
+									<i class="fa fa-comment highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">5</a>
+								</span> </div>
+									</footer>
+								</article>
+								<article class="post vertical-item content-padding ls ms rounded overflow_hidden">
+									<div class="item-media entry-thumbnail top_color_border"> <img src="images/gallery/14.jpg" alt=""> </div>
+									<div class="item-content">
+										<header class="entry-header">
+											<div class="categories-links highlightlinks"> <a href="blog-right.html">Glass Tinting</a> </div>
+											<h4 class="entry-title"> <a href="blog-single-right.html">Nine Features Of An Advertising</a> </h4>
+										</header>
+										<div class="entry-content">
+											<p>Tongue prosciutto strip steak, alcatra rump ham landjaeger venison.</p>
+										</div>
+									</div>
+									<footer class="entry-meta small-text greylinks">
+										<div class="inline-content"> <span>
+									<i class="fa fa-calendar highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">
+										<time datetime="2017-10-03T08:50:40+00:00">
+										12.11.17</time>
+									</a>
+								</span> <span>
+									<i class="fa fa-user highlight rightpadding_5"></i>
+									<a href="blog-right.html">
+										Admin
+									</a>
+								</span> <span>
+									<i class="fa fa-comment highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">8</a>
+								</span> </div>
+									</footer>
+								</article>
+								<article class="post vertical-item content-padding ls ms rounded overflow_hidden">
+									<div class="item-media entry-thumbnail top_color_border"> <img src="images/gallery/12.jpg" alt=""> </div>
+									<div class="item-content">
+										<header class="entry-header">
+											<div class="categories-links highlightlinks"> <a href="blog-right.html">Glass replacement</a> </div>
+											<h4 class="entry-title"> <a href="blog-single-right.html">The Big Publicity Bang Campaign</a> </h4>
+										</header>
+										<div class="entry-content">
+											<p>Pork loin chicken ham ball tip pastrami sirloin tail boudin short loin.</p>
+										</div>
+									</div>
+									<footer class="entry-meta small-text greylinks">
+										<div class="inline-content"> <span>
+									<i class="fa fa-calendar highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">
+										<time datetime="2017-10-03T08:50:40+00:00">
+										15.11.17</time>
+									</a>
+								</span> <span>
+									<i class="fa fa-user highlight rightpadding_5"></i>
+									<a href="blog-right.html">
+										Admin
+									</a>
+								</span> <span>
+									<i class="fa fa-comment highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">3</a>
+								</span> </div>
+									</footer>
+								</article>
+								<article class="post vertical-item content-padding ls ms rounded overflow_hidden">
+									<div class="item-media entry-thumbnail top_color_border"> <img src="images/gallery/05.jpg" alt=""> </div>
+									<div class="item-content">
+										<header class="entry-header">
+											<div class="categories-links highlightlinks"> <a href="blog-right.html">Auto class</a> </div>
+											<h4 class="entry-title"> <a href="blog-single-right.html">Study 800 Number Still Popular</a> </h4>
+										</header>
+										<div class="entry-content">
+											<p>Pig tri-tip burgdoggen tongue spare ribs. Beef ribs alcatra cupim.</p>
+										</div>
+									</div>
+									<footer class="entry-meta small-text greylinks">
+										<div class="inline-content"> <span>
+									<i class="fa fa-calendar highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">
+										<time datetime="2017-10-03T08:50:40+00:00">
+										10.11.17</time>
+									</a>
+								</span> <span>
+									<i class="fa fa-user highlight rightpadding_5"></i>
+									<a href="blog-right.html">
+										Admin
+									</a>
+								</span> <span>
+									<i class="fa fa-comment highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">5</a>
+								</span> </div>
+									</footer>
+								</article>
+								<article class="post vertical-item content-padding ls ms rounded overflow_hidden">
+									<div class="item-media entry-thumbnail top_color_border"> <img src="images/gallery/06.jpg" alt=""> </div>
+									<div class="item-content">
+										<header class="entry-header">
+											<div class="categories-links highlightlinks"> <a href="blog-right.html">Glass Tinting</a> </div>
+											<h4 class="entry-title"> <a href="blog-single-right.html">Nine Features Of An Advertising</a> </h4>
+										</header>
+										<div class="entry-content">
+											<p>Tongue prosciutto strip steak, alcatra rump ham landjaeger venison.</p>
+										</div>
+									</div>
+									<footer class="entry-meta small-text greylinks">
+										<div class="inline-content"> <span>
+									<i class="fa fa-calendar highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">
+										<time datetime="2017-10-03T08:50:40+00:00">
+										12.11.17</time>
+									</a>
+								</span> <span>
+									<i class="fa fa-user highlight rightpadding_5"></i>
+									<a href="blog-right.html">
+										Admin
+									</a>
+								</span> <span>
+									<i class="fa fa-comment highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">8</a>
+								</span> </div>
+									</footer>
+								</article>
+								<article class="post vertical-item content-padding ls ms rounded overflow_hidden">
+									<div class="item-media entry-thumbnail top_color_border"> <img src="images/gallery/13.jpg" alt=""> </div>
+									<div class="item-content">
+										<header class="entry-header">
+											<div class="categories-links highlightlinks"> <a href="blog-right.html">Glass replacement</a> </div>
+											<h4 class="entry-title"> <a href="blog-single-right.html">The Big Publicity Bang Campaign</a> </h4>
+										</header>
+										<div class="entry-content">
+											<p>Pork loin chicken ham ball tip pastrami sirloin tail boudin short loin.</p>
+										</div>
+									</div>
+									<footer class="entry-meta small-text greylinks">
+										<div class="inline-content"> <span>
+									<i class="fa fa-calendar highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">
+										<time datetime="2017-10-03T08:50:40+00:00">
+										15.11.17</time>
+									</a>
+								</span> <span>
+									<i class="fa fa-user highlight rightpadding_5"></i>
+									<a href="blog-right.html">
+										Admin
+									</a>
+								</span> <span>
+									<i class="fa fa-comment highlight rightpadding_5"></i>
+									<a href="blog-single-right.html">3</a>
+								</span> </div>
+									</footer>
+								</article>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<section id="partners" class="cs section_padding_top_40 section_padding_bottom_40">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-sm-12 text-center">
+							<div class="owl-carousel partners-carousel" data-responsive-xlg="9" data-responsive-lg="7" data-responsive-md="5" data-responsive-sm="5" data-responsive-xs="3" data-responsive-xxs="2" data-loop="true" data-center="true"> <a href="#">
+						<img src="images/partners/01.png" alt="" />
+					</a> <a href="#">
+						<img src="images/partners/02.png" alt="" />
+					</a> <a href="#">
+						<img src="images/partners/03.png" alt="" />
+					</a> <a href="#">
+						<img src="images/partners/04.png" alt="" />
+					</a> <a href="#">
+						<img src="images/partners/05.png" alt="" />
+					</a> <a href="#">
+						<img src="images/partners/06.png" alt="" />
+					</a> <a href="#">
+						<img src="images/partners/07.png" alt="" />
+					</a> <a href="#">
+						<img src="images/partners/08.png" alt="" />
+					</a> <a href="#">
+						<img src="images/partners/09.png" alt="" />
+					</a> </div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<footer class="page_footer ds section_padding_top_75 section_padding_bottom_75 columns_margin_bottom_30">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-6">
+							<div class="widget widget_text topmargin_0"> <img src="images/logo-bottom.png" alt="">
+								<p class="topmargin_40">We provide the most proficient auto glass installation and replacement services in the greater San Diego. area. We can help you.</p> <img src="images/signature.png" alt=""> </div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="widget widget_text">
+								<h4 class="widget-title"> Get in touch </h4>
+								<hr class="divider_60_2 main_bg_color">
+								<div class="media small-media">
+									<div class="media-left"> <i class="fa fa-map-marker highlight"></i> </div>
+									<div class="media-body">58/3 Kass Drives, Miami, Inc - 845</div>
+								</div>
+								<div class="media small-media">
+									<div class="media-left"> <i class="fa fa-phone highlight"></i> </div>
+									<div class="media-body">0 (800) 846 4235 (operator)</div>
+								</div>
+								<div class="media small-media">
+									<div class="media-left"> <i class="fa fa-pencil highlight"></i> </div>
+									<div class="media-body darklinks underlined-links"> <a href="mailto:clearview@example.com">clearview@example.com</a> </div>
+								</div>
+								<div class="media small-media">
+									<div class="media-left"> <i class="fa fa-clock-o highlight"></i> </div>
+									<div class="media-body">Working Hours: 24/7</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="widget widget_instagram">
+								<h4 class="widget-title">Our Instagram</h4>
+								<hr class="divider_60_2 main_bg_color">
+								<div class="instafeed"> </div>
+							</div>
+						</div>
+						<div class="col-md-3 col-sm-6">
+							<div class="widget widget_twitter highlightlinks">
+								<h4 class="widget-title">Twitter Widget</h4>
+								<hr class="divider_60_2 main_bg_color">
+								<div class="twitter"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<section class="ds ms page_copyright section_padding_25">
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-8 text-center text-sm-left">
+							<p>&copy; Copyright 2018. ClearView. All Rights Reserved.</p>
+						</div>
+						<div class="col-sm-4 text-center text-sm-right">
+							<div class="social-links"> <a class="social-icon socicon-facebook" href="#" title="Facebook"></a> <a class="social-icon socicon-twitter" href="#" title="Twitter"></a> <a class="social-icon socicon-google" href="#" title="Google"></a> <a class="social-icon socicon-linkedin"
+								    href="#" title="Linkedin"></a> <a class="social-icon socicon-youtube" href="#" title="Youtube"></a> </div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<!-- eof #box_wrapper -->
+	</div>
+	<!-- eof #canvas -->
+	<script src="js/compressed.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>
